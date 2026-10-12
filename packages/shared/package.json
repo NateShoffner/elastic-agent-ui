@@ -1,0 +1,12 @@
+{
+  "name": "@eaui/shared",
+  "private": true,
+  "type": "module",
+  "description": "Types for the bridge's HTTP API, shared by the bridge and the web app.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p ."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@eaui/control-proto",
+  "private": true,
+  "type": "module",
+  "description": "Generated client types for Elastic Agent's control_v2.proto (vendored from elastic/elastic-agent v9.4.4).",
+  "exports": {
+    ".": {
+      "types": "./gen/control_v2_pb.d.ts",
+      "default": "./gen/control_v2_pb.js"
+    },
+    "./control_v2.proto": "./proto/control_v2.proto"
+  },
+  "scripts": {
+    "gen": "buf generate"
+  },
+  "dependencies": {
+    "@bufbuild/protobuf": "^2.9.0"
+  },
+  "devDependencies": {
+    "@bufbuild/buf": "^1.57.0",
+    "@bufbuild/protoc-gen-es": "^2.9.0"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "elastic-agent-ui",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.11.2",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node apps/bridge/src/main.ts",
+    "build": "pnpm --filter @eaui/web build",
+    "dev:mock": "node scripts/dev-mock.ts",
+    "gen": "pnpm --filter @eaui/control-proto gen",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}
